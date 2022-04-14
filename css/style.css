@@ -1,0 +1,303 @@
+/* --------------------------- Start Fonts --------------------------- */
+@font-face {
+   font-family: "WorkSans";
+   src: url(../fonts/WorkSans-Regular.ttf);
+   font-weight: 400;
+}
+@font-face {
+   font-family: "WorkSans";
+   src: url(../fonts/WorkSans-ExtraBold.ttf);
+   font-weight: 800;
+}
+@font-face {
+   font-family: "WorkSans";
+   src: url(../fonts/WorkSans-SemiBold.ttf);
+   font-weight: 600;
+}
+@font-face {
+   font-family: "WorkSans";
+   src: url(../fonts/WorkSans-ExtraLight.ttf);
+   font-weight: 200;
+}
+@font-face {
+   font-family: "WorkSans";
+   src: url(../fonts/WorkSans-Light.ttf);
+   font-weight: 300;
+}
+/* --------------------------- End Fonts --------------------------- */
+/* --------------------------- Start Globals - combonates --------------------------- */
+.up-fixed {
+   z-index: 9999;
+   width: 40px;
+   height: 40px;
+   background-color: #0078ff;
+   transition: filter 0.3s;
+}
+.up-fixed:hover {
+   -webkit-filter: brightness(110%);
+   -moz-filter: brightness(110%);
+   filter: brightness(110%);
+}
+body {
+   font-family: "WorkSans";
+   background-color: #f5f5f5;
+}
+/*---- title sec ----*/
+.title-sec {
+   text-align: center;
+   position: relative;
+}
+.title-sec::before {
+   content: "";
+   position: absolute;
+   bottom: -20px;
+   width: 50px;
+   height: 5px;
+   transform: translate(-25px);
+   background-color: #0078ff;
+}
+.title-sec h2 {
+   font-size: 5rem;
+   color: #e2e2e2;
+   font-weight: 600;
+}
+.title-sec h3 {
+   margin-top: -50px;
+   font-weight: 600;
+   font-size: 3rem;
+   letter-spacing: 5px;
+   filter: drop-shadow(0 0 10px rgb(0 0 0 / 0.4));
+}
+/*---- title small sec ----*/
+.title-sm-sec h3 {
+   font-weight: 600;
+   font-size: 1.8rem;
+   position: relative;
+   display: inline;
+}
+.title-sm-sec h3::before {
+   content: "";
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+   width: 100px;
+   height: 3px;
+   background-color: #0078ff;
+}
+.txt-prag {
+   line-height: 1.7rem;
+   color: #666;
+   font-size: 0.97rem;
+}
+.icons {
+   padding: 35px;
+   border-radius: 50%;
+   border: 10px solid #09c;
+   font-size: 1.6rem;
+   transition: background-color 0.5s, border-color 0.5s, color 0.3s;
+   display: inline-block;
+}
+/* --------------------------- End Globals --------------------------- */
+/* --------------------------- Start NavBar --------------------------- */
+
+nav .nav-item .nav-link {
+   margin-left: 20px;
+   font-weight: 600;
+   position: relative;
+}
+nav .nav-item .nav-link::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   width: 0;
+   height: 2px;
+   background-color: #eee;
+   transition: width 0.3s;
+}
+nav .nav-item .nav-link:hover::before {
+   width: 80%;
+}
+.dropdown-li-1 .dropdown-1 {
+   transform: translateY(50px);
+   transition: opacity 0.5s, transform 0.5s;
+   opacity: 0;
+   visibility: hidden;
+}
+.dropdown-li-1:hover .dropdown-1 {
+   opacity: 1;
+   transform: translateY(0px);
+   visibility: visible;
+}
+
+.dropdown-li-2 .dropdown-2 {
+   transform: translateY(50px);
+   transition: opacity 0.5s, transform 0.5s;
+   opacity: 0;
+   visibility: hidden;
+}
+.dropdown-li-2:hover .dropdown-2 {
+   opacity: 1;
+   transform: translateY(0px);
+   visibility: visible;
+}
+/* --------------------------- End NavBar --------------------------- */
+/* --------------------------- Start Home --------------------------- */
+.home {
+   background: url(../images/hero-bg.jpg) no-repeat fixed center;
+   background-size: cover;
+}
+.home .co-home {
+   height: 100vh;
+   background-color: rgb(0 0 0 / 0.5);
+   color: #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.home .co-home .intro-text h1 {
+   font-size: 6vw;
+   font-weight: 800;
+   letter-spacing: 4px;
+   margin: 30px 0;
+}
+
+/* --------------------------- End Home --------------------------- */
+/* --------------------------- Start About --------------------------- */
+
+.about .about-text span {
+   font-weight: 600;
+}
+.about .about-skils .skil {
+   margin: 15px 0;
+   font-size: 14px;
+}
+.about .about-skils .skil .progress {
+   height: 10px;
+   border-radius: unset;
+}
+/* --------------------------- End About --------------------------- */
+/* --------------------------- Start Service --------------------------- */
+.services .card-services .cd-service {
+   padding: 30px 0;
+   border: unset;
+   border-radius: 25px;
+   box-shadow: 0 10px 5px 0 rgb(0 0 0 / 0.1);
+}
+.services .card-services .cd-service .card-body {
+   padding: 25px 15px 5px;
+}
+.services .card-services .cd-service h3 {
+   font-weight: 600;
+   letter-spacing: -2px;
+   padding: 5px 0;
+}
+.services .card-services .cd-service:hover .icons {
+   background-color: rgb(0, 153, 204);
+   border-color: #cde1f8;
+   color: #fff;
+}
+.services-footer {
+   background: url(../images/counters-bg.jpg) fixed center;
+   background-size: cover;
+}
+.services-footer .item {
+   padding: 40px 0;
+}
+.services-footer .item .icons {
+   padding: 15px;
+   border-width: 8px;
+   border-color: #cde1f8;
+}
+.services-footer .item h3 {
+   margin-top: 20px;
+   font-size: 3rem;
+   font-weight: 600;
+}
+/* --------------------------- End Service --------------------------- */
+/* --------------------------- Start Work --------------------------- */
+.work-content img {
+   filter: grayscale(100%);
+   transition: filter 0.7s, transform 0.4s, opacity 0.7s;
+}
+.work-content .card:hover img {
+   filter: grayscale(0);
+   transform: scale(1.15) rotate(5deg);
+   opacity: 0.6;
+}
+.work-content .date-work {
+   font-size: 14px;
+   font-weight: 300;
+}
+.work-footer {
+   background: url(../images/overlay-bg.jpg) fixed center;
+   background-size: cover;
+}
+.work-footer .btn-slid {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+}
+.carousel-caption {
+   position: unset;
+}
+/* --------------------------- End Work --------------------------- */
+/* --------------------------- Start Blog --------------------------- */
+.blog .blog-content .card-footer img {
+   width: 30px;
+   border-radius: 50%;
+}
+.blog .blog-content .card-img-top {
+   width: 100%;
+   filter: grayscale(100%);
+   transition: transform 0.4s, filter 0.4s, opacity 0.4s;
+   opacity: 0.7;
+}
+.blog .blog-content .card:hover .card-img-top {
+   filter: grayscale(0);
+   transform: scale(1.2) rotate(5deg);
+}
+.blog .blog-content .card a {
+   transition: color 0.4s;
+}
+
+.blog .blog-content .card a:hover {
+   color: #09c !important;
+}
+/* --------------------------- End Blog --------------------------- */
+/* --------------------------- Start contact --------------------------- */
+.contact {
+   background: url(../images/overlay-bg.jpg) fixed center;
+   background-size: cover;
+}
+.contact-info .contact-informaton li {
+   margin-bottom: 10px;
+   margin-left: -15px;
+}
+.contact .form-data .btn-send button {
+   transition: border-color 0.5s;
+}
+.contact .form-data .btn-send button:hover {
+   border-color: #99c7fc !important;
+}
+.contact-info .social span {
+   display: inline-block;
+   margin: 0 10px;
+   font-size: 1.2rem;
+   text-align: center;
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   border: 4px solid #09c;
+   transition: border-color 0.4s, background-color 0.3s, color 0.5s;
+}
+.contact-info .social span:hover {
+   border-color: #99c7fc;
+   background-color: #09c;
+   color: #fff;
+}
+/* --------------------------- End contact --------------------------- */
+/* --------------------------- Start Footer --------------------------- */
+footer {
+   box-shadow: 0 0 6px 0 rgb(0 0 0 / 0.4) inset;
+}
